@@ -1,0 +1,440 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff5ee;
+  width: 100%;
+  margin: auto;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #395e60;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-color: #fff5ee;
+}
+.hamburger-menu {
+  padding-left: 40%;
+}
+
+.main-header h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  padding: 0px;
+}
+
+.main-header h1 a {
+  text-decoration: none;
+  color: #395e60;
+}
+
+nav {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav a:hover {
+  color: #5f9ea0;
+  border-top: 1px solid #5f9ea0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #395e60;
+  padding: 1% 1%;
+}
+
+.main-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 32%;
+}
+
+.main-images img {
+  padding: 5px;
+  width: 50%;
+  object-fit: contain;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: #395e60;
+  font-family: "News Cycle", sans-serif;
+}
+
+.welcome a {
+  text-decoration: none;
+  background-color: #395e60;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about,
+.films,
+.photography,
+.press,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #395e60;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  padding: 10px;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 35%;
+}
+
+.about-container {
+  text-align: center;
+  width: 90%;
+}
+
+.about-container,
+.film-list-container,
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "News Cycle", sans-serif;
+}
+.about img {
+  object-fit: contain;
+  width: 40%;
+}
+
+.film-list {
+  padding: 20px;
+  text-align: center;
+}
+
+.film-list img {
+  object-fit: contain;
+  width: 70%;
+}
+
+.photography p {
+  font-family: "News Cycle", sans-serif;
+}
+.photo-container a {
+  padding: 20px;
+  text-align: center;
+}
+
+.photo-container img {
+  object-fit: contain;
+  width: 100%;
+  align-items: center;
+}
+
+.contact {
+  padding-bottom: 50px;
+  font-family: "News Cycle", sans-serif;
+  font-size: 4vw;
+}
+
+.contact p {
+  width: 100%;
+  font-size: 4vw;
+}
+
+.contact img {
+  object-fit: contain;
+  width: 50%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  background-color: #5f9ea0;
+  padding: 10px;
+  color: white;
+  font-size: 10px;
+  width: 100%;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+}
+
+.social-icons-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.social-icons-footer li {
+  padding: 0px 10px;
+}
+
+.gallery-heading {
+  color: #395e60;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-container img {
+  width: 100%;
+  object-fit: contain;
+  margin: 2px;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  .main-header {
+    position: fixed;
+    top: 0;
+    background-color: #fff5ee;
+    border-bottom: 2px solid #395e60;
+    flex-direction: row;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+    padding: 0px;
+  }
+  .main-header h1 {
+    font-size: 7vw;
+    padding-left: 50px;
+  }
+  nav {
+    display: flex;
+    font-size: 1.3vw;
+    justify-content: flex-end;
+    width: 70%;
+    flex-shrink: 3;
+    font-family: "News Cycle", sans-serif;
+  }
+  nav a {
+    padding: 15px 30px;
+    flex-shrink: 3;
+  }
+
+  .main-images {
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .main-images img {
+    width: 35%;
+    object-fit: contain;
+    padding-bottom: 5%;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .welcome p {
+    padding-bottom: 5%;
+  }
+
+  .about p,
+  .films p,
+  .photography p,
+  .contact p {
+    font-size: 1.5vw;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  .about h2 {
+    padding-top: 200px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 30pt;
+    text-align: left;
+  }
+  .about-container p {
+    width: 50%;
+  }
+  .about-container img {
+    padding: 0% 5%;
+    width: 20%;
+  }
+  .films h2 {
+    padding-top: 200px;
+  }
+
+  .film-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+  .film-list img {
+    width: 40%;
+    padding: 40px;
+  }
+  .film-info {
+    padding-left: 10%;
+    width: 40%;
+  }
+  .photography h2 {
+    padding-top: 180px;
+    margin: 0px;
+  }
+
+  .photography p {
+    margin: 0px;
+  }
+  .photo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+  }
+
+  .photo-container img {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .press h2 {
+    padding-top: 200px;
+  }
+  .contact h2 {
+    padding-top: 200px;
+  }
+  .contact img {
+    width: 40%;
+    padding-right: 15%;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0% 10%;
+  }
+  .social-icons-footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .gallery-heading {
+    padding-top: 180px;
+    margin: 0px;
+  }
+  .gallery-container {
+    padding-bottom: 100px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 98%;
+    margin: 5px;
+  }
+}
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
+.side-menu-position {
+  padding-top: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.side-menu-design {
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #395e60;
+}
+.side-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 25px 25px 25px;
+}
+.side-header img {
+  width: 10%;
+  object-fit: contain;
+}
+.show-menu {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.side-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
+.side-menu-content a {
+  padding: 5% 5%;
+  text-decoration: none;
+  color: white;
+  font-size: 6vw;
+}
+@media (min-width: 500px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
