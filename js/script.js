@@ -9,5 +9,3 @@ function closeMenu() {
 document.getElementById("menu-trigger").addEventListener("click", openMenu);
 
 document.getElementById("menu-close").addEventListener("click", closeMenu);
-
-document.getElementById("trigger-close").addEventListener("click", closeMenu);
